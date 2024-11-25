@@ -1,0 +1,44 @@
+.imgTitle:hover{
+    color: red;
+}
+
+.productImg{
+    height: 400px;
+}
+.product{
+    position: relative;
+}
+.options{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 70%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    margin: auto;
+    opacity: 0;
+    transition: all 1s;
+}
+.product:hover .options{
+    opacity: 1;
+}
+i{
+    transition: all .6s;
+    cursor: pointer;
+}
+.options i:hover{
+    color: red;
+}
+
+.col-lg-3 h3,.col-lg-3 h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all .5s;
+}

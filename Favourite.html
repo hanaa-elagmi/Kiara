@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+   
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fav.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/scrollBar.css">
+</head>
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">KIARA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="images/main-menu.png" alt="" width="30px" />
+          </button>
+          <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="index.html"
+                  ><i class="fa-solid fa-house text-light"></i> <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html"
+                  ><i class="fa-solid fa-bag-shopping text-light"></i>
+                  <span>Shop</span>
+                </a>
+              </li>
+              <li class="nav-item cart">
+                <a class="nav-link" href="cart.html"> <i class="fa-solid fa-cart-shopping text-light"></i> <span>Cart</span> </a>
+              </li>
+              <li class="nav-item fav">
+                <a class="nav-link" href="Favourite.html"> <i class="fa-solid fa-heart text-light"></i> <span>Favourite</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span>Contact</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><span>About</span></a>
+              </li>
+              <li class="nav-item signIn">
+                <a class="nav-link" href="login.html"><span>Sign In</span></a>
+              </li>
+              <li class="nav-item signUp">
+                <a class="nav-link" href="Register.html"><span>Sign Up</span></a>
+              </li>
+              <li class="nav-item logOut">
+                <a class="nav-link" id="signOut"><span>Sign Out</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="box-title">
+        <div class="caption text-center">
+          <h1 class="pageNumber">Favourites</h1>
+          <p>
+            <a href="index.html" class="text-decoration-none text-dark">Home > </a
+            ><span class="span">Favourites</span>
+          </p>
+        </div>
+      </div>
+
+<div class="container">
+    <div class="row Favrow">
+        <div class="col-md-3">
+            <div class="item my-5 ">
+                <img src="images/cereal-killer-pt2-printed-oversized-tee-printed-oversized-tees-in-your-shoe-466087.jpg" alt=""class="w-100">
+                <div class="icon">
+                    <i class="fa-solid fa-eye text-white fs-5"></i>
+                    <i class="fa-solid fa-cart-arrow-down cart text-white fs-5"></i>
+                    <i class="fa-solid fa-heart-circle-minus text-white fs-5"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+</div>
+
+
+      <div id="footer" class="bg-secondary-subtle pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="fw-bold">KIARA</h3>
+              <p>
+                Gravida massa volutpat aenean odio. Amet, turpis erat nullam
+                fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit
+                ac sit suscipit hendrerit.
+              </p>
+              <div class="icons">
+                <i class="fa-brands fa-instagram me-2"></i>
+                <i class="fa-brands fa-facebook me-2"></i>
+                <i class="fa-brands fa-twitter me-2"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h3>Quick Links</h3>
+              <a href="#home" class="text-decoration-none d-block text-dark"
+                >HOME</a
+              >
+              <a href="#about" class="text-decoration-none d-block text-dark"
+                >ABOUT</a
+              >
+              <a href="#testmonial" class="text-decoration-none d-block text-dark"
+                >TESTMONIALS</a
+              >
+              <a href="#contact" class="text-decoration-none d-block text-dark"
+                >CONTACT</a
+              >
+            </div>
+            <div class="col-md-3">
+              <h3>Help & Info</h3>
+              <a class="text-decoration-none d-block text-dark"
+                >TRACK YOUR ORDER</a
+              >
+              <a class="text-decoration-none d-block text-dark">RETURNS +</a>
+              <a class="text-decoration-none d-block text-dark">EXCHANGES +</a>
+              <a class="text-decoration-none d-block text-dark">SHIPPING</a>
+              <a class="text-decoration-none d-block text-dark">DELIVARY</a>
+              <a class="text-decoration-none d-block text-dark">CONTACTS US</a>
+              <a class="text-decoration-none d-block text-dark">FIND US EASY</a>
+            </div>
+            <div class="col-md-3">
+              <h3>Contact Us</h3>
+              <p>
+                Do you have any questions or suggestions? contact@yourcompany.com
+              </p>
+              <p>Do you need support? Give us a call. +43 720 11 52 78</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="footertwo" class="bg-secondary-subtle pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <span>WE Ship With:</span>
+                <img src="images/arct-icon.png" alt="" />
+                <img src="images/dhl-logo.png" alt="" />
+              </div>
+              <div>
+                <span>Payment options:</span>
+                <img src="images/visa-card.png" alt="" />
+                <img src="images/master-card.png" alt="" />
+                <img src="images/paypal-card.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p>
+                © Copyright 2024 Kaira. All rights reserved. Design by Hanaa
+                Elagmi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="js/fav.js"></script>
+</body>
+</html>

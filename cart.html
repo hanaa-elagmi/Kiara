@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/scrollBar.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">KIARA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="images/main-menu.png" alt="" width="30px" />
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="index.html"
+                ><i class="fa-solid fa-house text-light"></i> <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html"
+                ><i class="fa-solid fa-bag-shopping text-light"></i>
+                <span>Shop</span>
+              </a>
+            </li>
+            <li class="nav-item cart">
+              <a class="nav-link" href="cart.html"> <i class="fa-solid fa-cart-shopping text-light"></i> <span>Cart</span> </a>
+            </li>
+            <li class="nav-item fav">
+              <a class="nav-link" href="Favourite.html"> <i class="fa-solid fa-heart text-light"></i> <span>Favourite</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><span>Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><span>About</span></a>
+            </li>
+            <li class="nav-item signIn">
+              <a class="nav-link" href="login.html"><span>Sign In</span></a>
+            </li>
+            <li class="nav-item signUp">
+              <a class="nav-link" href="Register.html"><span>Sign Up</span></a>
+            </li>
+            <li class="nav-item logOut">
+                <a class="nav-link" id="signOut"><span>Sign Out</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page title -->
+
+    <div class="box-title">
+      <div class="caption text-center">
+        <h1 class="pageNumber">Cart Page</h1>
+        <p>
+          <a href="index.html" class="text-decoration-none text-dark">Home > </a
+          ><span class="span">Cart page</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- details -->
+    <div class="container cartDetails my-5">
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-hover ">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+              </tr>
+            </thead>
+
+            <tbody class="cartItem">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 cart-totals">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Cart Totals</th>
+                            <th></th>
+                        </tr>
+    
+                    </thead>
+                    <tbody class="totals">
+                        <tr>
+                            <td>Total Price :</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total Quantity : </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button>Proceed To Checkout</button></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="bg-secondary-subtle pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="fw-bold">KIARA</h3>
+            <p>
+              Gravida massa volutpat aenean odio. Amet, turpis erat nullam
+              fringilla elementum diam in. Nisi, purus vitae, ultrices nunc. Sit
+              ac sit suscipit hendrerit.
+            </p>
+            <div class="icons">
+              <i class="fa-brands fa-instagram me-2"></i>
+              <i class="fa-brands fa-facebook me-2"></i>
+              <i class="fa-brands fa-twitter me-2"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h3>Quick Links</h3>
+            <a href="#home" class="text-decoration-none d-block text-dark"
+              >HOME</a
+            >
+            <a href="#about" class="text-decoration-none d-block text-dark"
+              >ABOUT</a
+            >
+            <a href="#testmonial" class="text-decoration-none d-block text-dark"
+              >TESTMONIALS</a
+            >
+            <a href="#contact" class="text-decoration-none d-block text-dark"
+              >CONTACT</a
+            >
+          </div>
+          <div class="col-md-3">
+            <h3>Help & Info</h3>
+            <a class="text-decoration-none d-block text-dark"
+              >TRACK YOUR ORDER</a
+            >
+            <a class="text-decoration-none d-block text-dark">RETURNS +</a>
+            <a class="text-decoration-none d-block text-dark">EXCHANGES +</a>
+            <a class="text-decoration-none d-block text-dark">SHIPPING</a>
+            <a class="text-decoration-none d-block text-dark">DELIVARY</a>
+            <a class="text-decoration-none d-block text-dark">CONTACTS US</a>
+            <a class="text-decoration-none d-block text-dark">FIND US EASY</a>
+          </div>
+          <div class="col-md-3">
+            <h3>Contact Us</h3>
+            <p>
+              Do you have any questions or suggestions? contact@yourcompany.com
+            </p>
+            <p>Do you need support? Give us a call. +43 720 11 52 78</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footertwo" class="bg-secondary-subtle pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <span>WE Ship With:</span>
+              <img src="images/arct-icon.png" alt="" />
+              <img src="images/dhl-logo.png" alt="" />
+            </div>
+            <div>
+              <span>Payment options:</span>
+              <img src="images/visa-card.png" alt="" />
+              <img src="images/master-card.png" alt="" />
+              <img src="images/paypal-card.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p>
+              © Copyright 2024 Kaira. All rights reserved. Design by Hanaa
+              Elagmi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="staticBackdropLabel">Checkout</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div>
+            <img src="images/undrawred_credit_card_payments_re_qboh.svg" class="w-100" alt="" width="300px" height="300px">
+          </div>
+          <form action="">
+            <div>
+                <input type="text" placeholder="Name" class="input-style " id="name" >
+            </div>
+            <div id="NameAlert" class="text-danger d-none ">Should be only letters</div>
+            <div>
+                <input type="text" placeholder="Addres" class="input-style" id="address">
+            </div>
+            <div id="AddressAlert" class="text-danger d-none ">only letters and numbers</div>
+            <div>
+                <input type="email" placeholder="Email" class="input-style" id="email">
+            </div>
+            <div id="emailAlert" class="text-danger d-none ">Should be an email</div>
+            <div>
+                <input type="text" placeholder="Phone Number" class="input-style"id="phoneNumber">
+            </div>
+            <div id="phoneAlert" class="text-danger d-none ">Should be only 11 numbers and start with 010 |011 |012 |015</div>
+            <div>
+                <input type="text" placeholder="CardNumber" class="input-style"id="card">
+            </div>
+            <div id="cardAlert" class="text-danger d-none ">Should be 14 number</div>
+            <div id="backAlert" class="text-danger d-none my-3 text-center"></div>
+                <button id="payBtn" disabled>Checkout</button>
+            </div>
+
+           
+        </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+
+    <script src="js/cart.js"></script>
+    <script src="js/payment.js"></script>
+  </body>
+</html>

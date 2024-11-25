@@ -1,0 +1,41 @@
+
+h1,h2,h3,h4{
+    font-family: "Marcellus", serif;
+}
+p{
+    font-family: "Jost", sans-serif;
+    color: #848484;
+}
+.Scheck{
+    color: #848484;
+}
+.box-title{
+    background: url(../images/page-title.jpg);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.at{
+    color: red;
+}
+.contact{
+    color: white;
+    background:black;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.contact:hover{
+ 
+    background: red;
+   
+}
+.about{
+    background: #EDF0F5;
+}

@@ -1,0 +1,31 @@
+.nav-link{
+    color: white !important;
+}
+a:hover >* {
+    color: red !important;
+}
+.navbar-brand{
+    font-family: "Marcellus", serif;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.navbar{
+    color: white !important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99999;
+    padding: 0px 20px;
+    min-height: 65px;
+    max-height: fit-content;
+}
+
+#signOut{
+    cursor: pointer;
+}
+i{
+    margin-right: 5px;
+}
+

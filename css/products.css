@@ -1,0 +1,35 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1,h2{
+    font-family: "Marcellus", serif;
+}
+p{
+    font-family: "Jost", sans-serif;
+}
+
+
+.box-title{
+    background: url(../images/page-title.jpg);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    border: 2px solid black;
+    padding: 7px 12px;
+    margin: 2px;
+    
+}
+
+.page:hover{
+    color: red;
+    cursor: pointer;
+}
+

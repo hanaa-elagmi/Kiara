@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/scrollBar.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">KIARA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="images/main-menu.png" alt="" width="30px" />
+          </button>
+          <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-current="page"
+                  href="index.html"
+                  ><i class="fa-solid fa-house text-light"></i> <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html"
+                  ><i class="fa-solid fa-bag-shopping text-light"></i>
+                  <span>Shop</span>
+                </a>
+              </li>
+              <li class="nav-item cart">
+                <a class="nav-link" href="cart.html"> <i class="fa-solid fa-cart-shopping text-light"></i> <span>Cart</span> </a>
+              </li>
+              <li class="nav-item fav">
+                <a class="nav-link" href="Favourite.html"> <i class="fa-solid fa-heart text-light"></i> <span>Favourite</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span>Contact</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><span>About</span></a>
+              </li>
+              <li class="nav-item signIn">
+                <a class="nav-link" href="login.html"><span>Sign In</span></a>
+              </li>
+              <li class="nav-item signUp">
+                <a class="nav-link" href="Register.html"><span>Sign Up</span></a>
+              </li>
+              <li class="nav-item logOut">
+                  <a class="nav-link" id="signOut"><span>Sign Out</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+    <div class="main-box">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-md-6 login-img">
+                    
+                    <img src="images/undraw_access_account_re_8spm.svg" alt="">
+                </div>
+                <div class="col-md-6 login">
+                    <h1>Sign in</h1>
+                    <form action="">
+                        <div>
+                            <input type="email" placeholder="Email" class="input-style"id="email">
+                        </div>
+                        <div id="emailAlert" class="text-danger d-none ">Should be an email</div>
+                        <div>
+                            <input type="password" placeholder="Password" class="input-style"id="password">
+                        </div>
+                        <div id="passwordAlert" class="text-danger d-none ">Should be at least 8 characters</div>
+                        <div id="backAlert" class="text-danger d-none "></div>
+                        <div>
+
+                            <button id="login" class="fs-5" >Sign in</button>
+                        </div>
+                    </form>
+
+                    <div class="footer">
+                        <p>Don't have an account? <a href="Register.html">Sign Up</a></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
