@@ -176,7 +176,7 @@ registerBtn.addEventListener('click',function(e){
     console.log(finalResult);
     if (result.status==200) {
         showError("");
-        window.location.assign("/login.html")
+        window.location.assign("/Kiara/login.html")
     }
     else{
         showError(finalResult.message)

@@ -61,7 +61,7 @@ pageArr.forEach((page) =>
 function getProductId(id) {
   console.log(id);
   localStorage.setItem("productId", id);
-  window.location.assign("/productDetails.html");
+  window.location.assign("/Kiara/productDetails.html");
 }
 
 //get id and add to cart --------------------------------------------------------------------------------------------------------

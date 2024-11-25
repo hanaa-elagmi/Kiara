@@ -79,7 +79,7 @@ if(result.status==200){
     showError("");
     //console.log(Result);
     localStorage.setItem('userToken',Result.token);
-    window.location.assign("/index.html");
+    window.location.assign("/Kiara/index.html");
 }
 else{
    showError(Result.message);
