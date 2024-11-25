@@ -17,7 +17,7 @@ if (token != null) {
 signOut.addEventListener("click", () => {
   localStorage.removeItem("userToken");
   localStorage.removeItem('userId');
-  window.location.assign("/index.html");
+  window.location.assign("/Kiara/index.html");
 });
 
 function parseJwt(token) {
