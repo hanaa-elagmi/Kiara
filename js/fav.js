@@ -49,7 +49,7 @@ getAllProducts();
 function getProductId(id) {
   console.log(id);
   localStorage.setItem("productId", id);
-  window.location.assign("/productDetails.html");
+  window.location.assign("/Kiara/productDetails.html");
 }
 // //add to cart
 
